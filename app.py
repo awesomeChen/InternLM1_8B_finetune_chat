@@ -180,6 +180,7 @@ def on_btn_click():
 
 @st.cache_resource
 def load_model():
+    import os
     base_path = './InternLM1_8B_finetuned'
     os.system(f'git clone https://code.openxlab.org.cn/latiao/InternLM1_8B_finetuned.git {base_path}')
     os.system(f'cd {base_path} && git lfs pull')
